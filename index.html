@@ -4,37 +4,104 @@
     <meta charset="UTF-8">
     <title>Fork Me! FCC: Test Suite Template</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+
+h1 {
+    font-size: 3.0em;
+    color: #003179;
+    text-align: center;
+}
+
+img {
+    width: 180px;
+    height: 69px;
+    display: inline;
+}
+
+section#two {
+  display: flex;
+  justify-content: center;
+}
+
+section#three {
+  display: flex;
+  justify-content: center;
+}
+
+li {
+    list-style: none;
+    display: inline;
+    font-size: 1.6em;
+    margin-right: 10px;
+}
+
+li a {
+    text-decoration: none;
+    color: #003179;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+}
+
+form {
+  display: flex;
+  margin: 20px;
+}
+
+form * {
+  font-size: 1.5em;
+  padding-left: 10px; 
+  margin-left: 10px; 
+}
+
+@media screen and (max-width: 900px) {
+    body {
+        background-color: black;
+    }
+    
+}
+    </style>
   </head>
 
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    <h1>Hello, World! we are developers!</h1>
     <header id="header">
       <img id="header-img" src="https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F3%2F3e%2FFord_logo_flat.svg%2F1920px-Ford_logo_flat.svg.png">
       <nav id="nav-bar">
         <ul>
-          <li><a href="#one" class="nav-link">link</a></li>
-          <li><a href="#two" class="nav-link">link</a></li>
-          <li><a href="#three" class="nav-link">link</a></li>
+          <li><a href="#one" class="nav-link">Home</a></li>
+          <li><a href="#two" class="nav-link">About</a></li>
+          <li><a href="#three" class="nav-link">Contact</a></li>
         </ul>
       </nav>
     </header>
-    <section id="one">
-
-    </section>
-    <section id="two">
-
-    </section>
-    <section id="three">
-
-    </section>
-
-    <form id="form" action="https://www.freecodecamp.com/email-submit">
-      <input id="email" name="email" placeholder="email" type="email"/>
-      <input type="submit" id="submit"/>
-    </form>
-    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/HOnc1OVSxIA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+    <main>
+      <section id="one">
+        <h1>GO FURTHER!</h1>
+      </section>
+      <section id="two">
+        <iframe id="video" 
+          width="560" 
+          height="315" 
+          src="https://www.youtube.com/embed/HOnc1OVSxIA" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+      </section>
+      <section id="three">
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <input id="name" name="name" placeholder="name" type="text"/>
+          <input id="email" name="email" placeholder="email" type="email"/>
+          <input type="submit" id="submit"/>
+        </form>
+      </section>
+    </main>
     <!--
 
     Hello Camper!
